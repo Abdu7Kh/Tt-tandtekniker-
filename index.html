@@ -251,7 +251,7 @@
           <li><span class="check-icon">✔</span> SÄKER & SNABB LEVERANS</li>
         </ul>
         <p data-aos="fade-up" data-aos-duration="800">
-          Artem Dental Lab är tekniskt specialiserat tandlaboratorium med inriktning på estetik.
+          Tt tandtekniker Dental Lab är tekniskt specialiserat tandlaboratorium med inriktning på estetik.
         </p>
         <p data-aos="fade-up" data-aos-duration="800">
           Vår kompetens är grundad på 25 års erfarenhet inom tillverkning av tandestetik. Allt för att återskapa svenska befolkningens leende.
@@ -376,52 +376,101 @@
       </div>
     </div>
   </section>
+<!-- ====== KONTAKT SECTION ====== -->
+<style>
+  /* تغميق نص الإدخالات والنص البديل (placeholder) في نموذج الاتصال */
+  .contact-form .form-control {
+    color: #f8f9fa;            /* نص أبيض فاتح ليكون واضحًا على الخلفية الداكنة */
+    background-color: #343a40; /* نفس لون الخلفية الداكنة لمطابقة التصميم */
+    border: 1px solid #495057; /* جعل حدود الإدخال أوضح */
+  }
+  .contact-form .form-control::placeholder {
+    color: #ced4da;            /* لون رمادي فاتح للـ placeholder، مع تباين أفضل */
+    opacity: 1;                /* ظهور النص البديل بقوة */
+  }
+  .contact-form .form-control:focus {
+    background-color: #495057; /* تغيير خلفية الإدخال عند التركيز لجعلها مميزة */
+    border-color: #adb5bd;     /* توضيح الحد عند التركيز */
+    color: #ffffff;            /* التأكد من بقاء النص أبيض عند التركيز */
+  }
+  .contact-form .btn-outline-light {
+    border-color: #ced4da;
+    color: #ced4da;
+  }
+  .contact-form .btn-outline-light:hover {
+    background-color: #ced4da;
+    color: #343a40;
+  }
+</style>
 
-  <!-- ====== KONTAKT SECTION ====== -->
-  <section id="contact" class="py-5 bg-dark text-light" data-aos="fade-up" data-aos-duration="800">
-    <div class="container">
-      <div class="row align-items-start">
-        <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-          <h2 class="section-heading">Kontakta Oss</h2>
-          <p class="contact-intro">Kontakta oss gärna om du har några frågor! Vi försöker alltid svara så snabbt vi kan.</p>
-          <div class="social-icons mb-4">
-            <a href="https://www.instagram.com/tt914037?igsh=anZnOWg1bG5yNm9n"><i class="bi bi-instagram"></i></a>
-          </div>
-          <div class="contact-actions d-flex">
-            <div class="me-4 text-center">
+<section id="contact" class="py-5 bg-dark text-light" data-aos="fade-up" data-aos-duration="800">
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="section-heading">Kontakta Oss</h2>
+        <p class="contact-intro">Kontakta oss gärna om du har några frågor! Vi försöker alltid svara så snabbt vi kan.</p>
+        <div class="social-icons mb-4">
+          <a href="https://www.instagram.com/tt914037?igsh=anZnOWg1bG5yNm9n"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="contact-actions d-flex">
+          <!-- Arbetsorder: عند الضغط على هذا الرابط يفتح ملف PDF -->
+          <div class="me-4 text-center">
+            <a href="assets/ordersedelMaj2024.pdf" target="_blank" class="text-light text-decoration-none">
               <i class="bi bi-file-earmark-text contact-icon"></i>
               <p class="action-label">Arbetsorder</p>
-            </div>
-            <div class="text-center">
-              <i class="bi bi-envelope contact-icon"></i>
-              <p class="action-label">Svarspost</p>
-            </div>
+            </a>
+          </div>
+          <div class="text-center">
+            <i class="bi bi-envelope contact-icon"></i>
+            <p class="action-label">Svarspost</p>
           </div>
         </div>
-        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
-          <form class="contact-form p-4 rounded shadow-sm">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Namn:" required>
-              </div>
-              <div class="col-md-6">
-                <input type="email" class="form-control" placeholder="E-post:" required>
-              </div>
-              <div class="col-12">
-                <input type="text" class="form-control" placeholder="Klinikens namn:">
-              </div>
-              <div class="col-12">
-                <textarea class="form-control" rows="5" placeholder="Meddelande:" required></textarea>
-              </div>
-              <div class="col-12 text-end">
-                <button type="submit" class="btn btn-outline-light">Skicka</button>
-              </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+        <form class="contact-form p-4 rounded shadow-sm">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Namn:"
+                required
+              >
             </div>
-          </form>
-        </div>
+            <div class="col-md-6">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="E-post:"
+                required
+              >
+            </div>
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Klinikens namn:"
+              >
+            </div>
+            <div class="col-12">
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Meddelande:"
+                required
+              ></textarea>
+            </div>
+            <div class="col-12 text-end">
+              <button type="submit" class="btn btn-outline-light">Skicka</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
  <!-- ====== MAP SECTION ====== -->
 <section id="map" class="mb-5">
